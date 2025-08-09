@@ -17,7 +17,7 @@ function ShowTodos(){
                 const json = await res.json();
                 setTodos(json.todos);
             })
-    }, [])
+    }, [todos])
 
     return(
         <div>
